@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Drawing;
 
+
 namespace Screenshot
 {
     /// <summary>
@@ -30,8 +31,7 @@ namespace Screenshot
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string url = txtUrl.Text;
-            webBrowser1.Navigate("http://" + url);
-            //this.Button_Click_1(sender, e);
+            webBrowser1.Navigate("http://" + url);                        
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -46,19 +46,23 @@ namespace Screenshot
 
             // This is a method of the WebBrowser control, and the most important part
             webBrowser1.DrawToBitmap(bitmap, bitmapRect);
-
-            // Generate a thumbnail of the screenshot (optional)
+                        
             System.Drawing.Image origImage = bitmap;
             Random rnd1 = new Random();
             int num = rnd1.Next(1, 1000000);
-            string filename = "test" + width + "_" + height + "_" + num + ".jpg";
+
+            // You have to change correct path to show the image            
+            string path = @"C:\";
+            string filename = path + "test" + width + "_" + height + "_" + num + ".jpg";
             origImage.Save(filename);
-            string path = @"C:\Users\VinhNguyen\Documents\GitHub\Screenshot\Screenshot\Screenshot\bin\Debug\";
-            BitmapImage src = new BitmapImage(new Uri(path+filename));
+                        
+            BitmapImage src = new BitmapImage(new Uri(filename));
             imageScreenshot.Height = height;
             imageScreenshot.Width = width;
             imageScreenshot.Source = src;
             webBrowser1.Visible = false;
+             
+
         }
     }
 }
