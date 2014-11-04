@@ -1,0 +1,13 @@
+C:\Users\VinhNguyen\Documents\GitHub\Screenshot\Screenshot\Screenshot\bin\Debug\Screenshot.exe.config
+C:\Users\VinhNguyen\Documents\GitHub\Screenshot\Screenshot\Screenshot\bin\Debug\Screenshot.exe
+C:\Users\VinhNguyen\Documents\GitHub\Screenshot\Screenshot\Screenshot\bin\Debug\Screenshot.pdb
+C:\Users\VinhNguyen\Documents\GitHub\Screenshot\Screenshot\Screenshot\obj\Debug\Screenshot.csprojResolveAssemblyReference.cache
+C:\Users\VinhNguyen\Documents\GitHub\Screenshot\Screenshot\Screenshot\obj\Debug\MainWindow.baml
+C:\Users\VinhNguyen\Documents\GitHub\Screenshot\Screenshot\Screenshot\obj\Debug\MainWindow.g.cs
+C:\Users\VinhNguyen\Documents\GitHub\Screenshot\Screenshot\Screenshot\obj\Debug\App.g.cs
+C:\Users\VinhNguyen\Documents\GitHub\Screenshot\Screenshot\Screenshot\obj\Debug\Screenshot_MarkupCompile.cache
+C:\Users\VinhNguyen\Documents\GitHub\Screenshot\Screenshot\Screenshot\obj\Debug\Screenshot.g.resources
+C:\Users\VinhNguyen\Documents\GitHub\Screenshot\Screenshot\Screenshot\obj\Debug\Screenshot.Properties.Resources.resources
+C:\Users\VinhNguyen\Documents\GitHub\Screenshot\Screenshot\Screenshot\obj\Debug\Screenshot.csproj.GenerateResource.Cache
+C:\Users\VinhNguyen\Documents\GitHub\Screenshot\Screenshot\Screenshot\obj\Debug\Screenshot.exe
+C:\Users\VinhNguyen\Documents\GitHub\Screenshot\Screenshot\Screenshot\obj\Debug\Screenshot.pdb
