@@ -31,11 +31,16 @@ namespace Screenshot
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string url = txtUrl.Text;
-            webBrowser1.Navigate("http://" + url);                        
+            webBrowser1.Navigate("http://" + url);
+            Button btn1 = new Button();
+            btn1.Click += btn_Click;
+            btn1.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+            //takePicButton.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));       
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void btn_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("Render image");
             int height = int.Parse(txtHeight.Text.ToString());
             int width = int.Parse(txtWidth.Text.ToString());
             Bitmap bitmap = new Bitmap(width, height);
@@ -46,7 +51,7 @@ namespace Screenshot
 
             // This is a method of the WebBrowser control, and the most important part
             webBrowser1.DrawToBitmap(bitmap, bitmapRect);
-                        
+
             System.Drawing.Image origImage = bitmap;
             Random rnd1 = new Random();
             int num = rnd1.Next(1, 1000000);
@@ -55,14 +60,14 @@ namespace Screenshot
             string path = @"C:\";
             string filename = path + "test" + width + "_" + height + "_" + num + ".jpg";
             origImage.Save(filename);
-                        
+
             BitmapImage src = new BitmapImage(new Uri(filename));
             imageScreenshot.Height = height;
             imageScreenshot.Width = width;
             imageScreenshot.Source = src;
             webBrowser1.Visible = false;
-             
-
         }
+
+        
     }
 }

@@ -9,9 +9,8 @@
         <TextBox x:Name="txtUrl" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="www.cnn.com" VerticalAlignment="Top" Width="120" Margin="86,37,0,0"/>
         <TextBox x:Name="txtWidth" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="521" VerticalAlignment="Top" Width="120" Margin="86,80,0,0"/>
         <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="384" VerticalAlignment="Top" Width="120" Margin="86,121,0,0"/>
-        <Button Content="Go to website" HorizontalAlignment="Left" Margin="243,38,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click"/>
+        <Button Content="Capture" HorizontalAlignment="Left" Margin="231,37,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click"/>
         <Image x:Name="imageScreenshot" HorizontalAlignment="Left" Height="100" Margin="23,172,0,0" VerticalAlignment="Top" Width="470"/>
-        <Button x:Name="takePicButton" Content="Take Pics" HorizontalAlignment="Left" Margin="243,80,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click_1"/>
 
     </Grid>
 </Window>
