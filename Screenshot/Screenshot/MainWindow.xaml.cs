@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Drawing;
-
+using System.Windows.Threading;
 
 namespace Screenshot
 {
@@ -23,11 +23,14 @@ namespace Screenshot
     public partial class MainWindow : Window
     {
         public System.Windows.Forms.WebBrowser webBrowser1 = new System.Windows.Forms.WebBrowser();
+        
         public MainWindow()
         {
             InitializeComponent();
         }
 
+        
+                
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string url = txtUrl.Text;
@@ -35,8 +38,25 @@ namespace Screenshot
             Button btn1 = new Button();
             btn1.Click += btn_Click;
             btn1.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
-            //takePicButton.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));       
+            
+            DispatcherTimer dispatcherTimer = new DispatcherTimer();
+            dispatcherTimer.Tick += new EventHandler(timer_Tick);
+            dispatcherTimer.Interval = new TimeSpan(0, 1, 0);
+            dispatcherTimer.Start();
+            
         }
+
+        void timer_Tick(object sender, EventArgs e)
+        {
+            if (chkUpdate.IsChecked.Value == true)
+            {
+                MessageBox.Show("Recapture...");
+                Button btn1 = new Button();
+                btn1.Click += Button_Click;
+                btn1.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+            }
+        }
+
 
         private void btn_Click(object sender, RoutedEventArgs e)
         {
@@ -67,7 +87,6 @@ namespace Screenshot
             imageScreenshot.Source = src;
             webBrowser1.Visible = false;
         }
-
         
     }
 }
