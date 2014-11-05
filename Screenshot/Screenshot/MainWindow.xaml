@@ -6,11 +6,11 @@
         <Label Content="URL:&#xD;&#xA;" HorizontalAlignment="Left" Margin="23,35,0,0" VerticalAlignment="Top"/>
         <Label Content="Width:&#xD;&#xA;" HorizontalAlignment="Left" Margin="23,78,0,0" VerticalAlignment="Top"/>
         <Label Content="Height:" HorizontalAlignment="Left" Margin="23,121,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtUrl" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="www.cnn.com" VerticalAlignment="Top" Width="120" Margin="86,37,0,0"/>
-        <TextBox x:Name="txtWidth" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="521" VerticalAlignment="Top" Width="120" Margin="86,80,0,0"/>
-        <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="384" VerticalAlignment="Top" Width="120" Margin="86,121,0,0"/>
+        <TextBox x:Name="txtUrl" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="www.renewedvision.com" VerticalAlignment="Top" Width="120" Margin="86,37,0,0"/>
+        <TextBox x:Name="txtWidth" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="800" VerticalAlignment="Top" Width="120" Margin="86,80,0,0"/>
+        <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="600" VerticalAlignment="Top" Width="120" Margin="86,121,0,0"/>
         <Button Content="Capture" HorizontalAlignment="Left" Margin="231,37,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click"/>
-        <Image x:Name="imageScreenshot" HorizontalAlignment="Left" Height="100" Margin="23,172,0,0" VerticalAlignment="Top" Width="470"/>
+        <Image x:Name="imageScreenshot" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Hidden" HorizontalAlignment="Left" Height="100" Margin="23,172,0,0" VerticalAlignment="Top" Width="470"/>
         <CheckBox x:Name="chkUpdate" Content="Update screenshot&#xD;&#xA;" HorizontalAlignment="Left" Margin="231,78,0,0" VerticalAlignment="Top"/>
 
     </Grid>
