@@ -53,7 +53,7 @@ namespace Screenshot
             int height = int.Parse(txtHeight.Text.ToString());
             int width = int.Parse(txtWidth.Text.ToString());
 
-            // Create 
+            // Create image
             Bitmap bitmap = new Bitmap(width, height);
             System.Drawing.Rectangle bitmapRect = new System.Drawing.Rectangle(0, 0, width, height);
 
